@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Manicure2</string>
+    <string name="time_8_00">8:00</string>
+    <string name="time_10_00">10:00</string>
+    <string name="time_12_00">12:00</string>
+    <string name="time_14_00">14:00</string>
+    <string name="time_16_00">16:00</string>
+    <string name="time_18_00">18:00</string>
+    <string name="time_20_00">20:00</string>
+    <string name="time_6_00">6:00</string>
+    <string name="day_monday">пн</string>
+    <string name="date_holder">00</string>
+    <string name="day_tuesday">вт</string>
+    <string name="day_wednesday">ср</string>
+    <string name="day_thursday">чт</string>
+    <string name="day_friday">пт</string>
+    <string name="day_saturday">сб</string>
+    <string name="day_sunday">вс</string>
+    <string name="size_event_font">12sp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

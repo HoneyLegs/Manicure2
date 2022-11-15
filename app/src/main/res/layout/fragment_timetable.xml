@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearlayout_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_monday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_tuesday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_wednesday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_thursday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_friday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_saturday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_sunday"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_monday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_tuesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_wednesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_thursday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_friday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_saturday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_sunday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_holder"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollY="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_days">
+            <!--            android:scrollY="@{viewModel.currentScrollY}">-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/grid_time_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        layout="@layout/grid_line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_monday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/purple_500"
+                            android:text="Настя Кляксова"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_tuesday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_wednesday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_thursday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_friday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_saturday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line_sunday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="960dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_6_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_8_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_10_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_12_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_14_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_16_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_18_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:text="@string/time_20_00"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
